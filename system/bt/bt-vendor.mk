@@ -7,6 +7,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/common/system/bt/proprietary/system_ext/etc/bluetooth/bt_configstore.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth/bt_configstore.conf \
+    vendor/qcom/common/system/bt/proprietary/system_ext/etc/default-permissions/com.qualcomm.qtil.btdsda.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/com.qualcomm.qtil.btdsda.xml \
     vendor/qcom/common/system/bt/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
     vendor/qcom/common/system/bt/proprietary/system_ext/lib/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libldacBT_abr.so \
     vendor/qcom/common/system/bt/proprietary/system_ext/lib/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libldacBT_enc.so \
