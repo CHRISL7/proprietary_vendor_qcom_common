@@ -62,6 +62,9 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/system/perf/proprietary/system_ext/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.qspmhal@1.0.so
 
 PRODUCT_PACKAGES += \
+    PerformanceMode \
+    PowerSaveMode \
+    workloadclassifier \
     QPerformance \
     QXPerformance \
     UxPerformance
