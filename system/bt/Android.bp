@@ -5,23 +5,14 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libbtconfigstore",
+android_app_import {
+	name: "BluetoothDsDaService",
 	owner: "qcom/common",
-	strip: {
-		none: true,
+	apk: "proprietary/system_ext/app/BluetoothDsDaService/BluetoothDsDaService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
 	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/system_ext/lib/libbtconfigstore.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/libbtconfigstore.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
 	system_ext_specific: true,
 }
 
