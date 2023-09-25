@@ -66,5 +66,4 @@ PRODUCT_PACKAGES += \
     PowerSaveMode \
     workloadclassifier \
     QPerformance \
-    QXPerformance \
     UxPerformance

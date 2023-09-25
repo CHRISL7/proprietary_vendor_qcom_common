@@ -45,12 +45,6 @@ dex_import {
 }
 
 dex_import {
-	name: "QXPerformance",
-	owner: "qcom/common",
-	jars: ["proprietary/system/framework/QXPerformance.jar"],
-}
-
-dex_import {
 	name: "UxPerformance",
 	owner: "qcom/common",
 	jars: ["proprietary/system/framework/UxPerformance.jar"],

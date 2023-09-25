@@ -11,4 +11,4 @@ PRODUCT_COPY_FILES += \
     vendor/qcom/common/system/bt/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so
 
 PRODUCT_PACKAGES += \
-    BluetoothDsDaService
+    libbtconfigstore
