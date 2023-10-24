@@ -6,28 +6,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "PerformanceMode",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/PerformanceMode/PerformanceMode.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "PowerSaveMode",
-	owner: "qcom/common",
-	apk: "proprietary/system_ext/app/PowerSaveMode/PowerSaveMode.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "workloadclassifier",
 	owner: "qcom/common",
 	apk: "proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk",
@@ -38,10 +16,28 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+	name: "PerformanceMode",
+	owner: "qcom/common",
+	apk: "proprietary/system_ext/priv-app/PerformanceMode/PerformanceMode.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
 dex_import {
 	name: "QPerformance",
 	owner: "qcom/common",
 	jars: ["proprietary/system/framework/QPerformance.jar"],
+}
+
+dex_import {
+	name: "QXPerformance",
+	owner: "qcom/common",
+	jars: ["proprietary/system/framework/QXPerformance.jar"],
 }
 
 dex_import {
